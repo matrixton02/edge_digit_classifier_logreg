@@ -30,8 +30,14 @@ for c in range(num_classes):
 all_theta = np.array(all_theta)
 
 # Evaluate
+y_pred_train = predict_multiclass(X_train, all_theta)
 y_pred_test = predict_multiclass(X_test, all_theta)
-print("Test Accuracy:", accuracy_score(y_test, y_pred_test))
+
+train_acc = accuracy_score(y_train, y_pred_train)
+test_acc = accuracy_score(y_test, y_pred_test)
+
+print("Multiclass Train Accuracy:", train_acc)
+print("Multiclass Test Accuracy:", test_acc)
 
 # Save model
 os.makedirs("saved", exist_ok=True)
