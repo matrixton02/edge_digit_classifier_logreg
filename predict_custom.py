@@ -44,7 +44,7 @@ plt.title("Edge Map")
 plt.imshow(edge_img,cmap="gray")
 plt.axis("off")
 
-plt.subtitle(f"Predicted: {pred}")
+plt.suptitle(f"Predicted: {pred}")
 
 plt.tight_layout()
 plt.show()
