@@ -33,15 +33,6 @@ y=labels.copy()
 
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.3,random_state=42)
 
-y_pred_train = mu.predict_multiclass(X_train, all_theta)
-y_pred_test = mu.predict_multiclass(X_test, all_theta)
-
-train_acc = accuracy_score(y_train, y_pred_train)
-test_acc = accuracy_score(y_test, y_pred_test)
-
-print("Multiclass Train Accuracy:", train_acc)
-print("Multiclass Test Accuracy:", test_acc)
-
 sample_count=20
 test_indices=np.random.choice(len(y_test),sample_count,replace=False)
 
