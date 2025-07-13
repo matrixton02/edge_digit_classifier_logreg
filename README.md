@@ -84,8 +84,8 @@ python predict_custom.py data/test_image1.jpg
 
 | Dataset       | Accuracy   |
 |---------------|------------|
-| Training Set  | 95.06%     |
-| Test Set      | 94.81%     |
+| Training Set  | 83.4%     |
+| Test Set      | 80.55%     |
 
 ✅ These results were achieved using only logistic regression and edge maps — no deep learning involved.
 
